@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler | Klinik Psikolog Asiye Usluca</title>
+    <meta name="description" content="Bireysel terapi, ergen terapisi ve çift terapisi hizmetlerimiz ile ruh sağlığınızı destekleyin.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            DEFAULT: '#1A3C34',
+                            50: '#FAF9F6',
+                            100: '#E5DED4',
+                            200: '#D9B99B',
+                            300: '#B89F88',
+                            400: '#1A3C34',
+                            500: '#15312B',
+                            600: '#112622',
+                            700: '#0C1C19',
+                            800: '#081311',
+                            900: '#040908',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50">
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">Kln. Psk. Asiye Usluca</span>
+                    <span class="nav-logo-title">Klinik Psikolog</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="hizmetler.html" class="active">Hizmetler</a></li>
+                <li><a href="yazilar.html">Yazılar</a></li>
+                <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="hizmetler.html" class="active">Hizmetler</a>
+        <a href="yazilar.html">Yazılar</a>
+        <a href="iletisim.html" class="nav-cta-mobile">İletişim</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <h1 class="page-hero-title fade-up">Terapi Hizmetleri</h1>
+            <p class="page-hero-desc fade-up fade-up-delay-1">
+                Farklı ihtiyaçlara yönelik bilimsel dayanaklı terapi yaklaşımları ile yanınızdayım. Detaylı bilgi almak istediğiniz alanı aşağıdan inceleyebilirsiniz.
+            </p>
+        </section>
+
+        <!-- Services Detailed -->
+        <section class="services-detail">
+            <div class="container">
+                
+                <!-- 01 Bireysel Terapi -->
+                <div class="service-detail-card fade-up" id="bireysel">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-user-circle"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">01</span>
+                        <h2 class="service-detail-title">Bireysel Terapi</h2>
+                        <p class="service-detail-desc">
+                            Bireysel terapi, sadece semptomları dindirmek değil, kişinin kendi içsel dinamiklerini anlamlandırması ve yaşam kalitesini sürdürülebilir bir şekilde artırması için kurulan profesyonel bir ittifaktır. Kaygı, depresyon veya karmaşık yaşam olaylarıyla başa çıkarken; bilimsel dayanaklı yöntemlerle (BDT, Kabul ve Kararlılık Terapisi) duygusal esnekliğinizi artırmayı hedefliyoruz.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Duygu Düzenleme ve Öz-Şefkat Becerileri</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Psikolojik Dayanıklılık ve Esneklik Gelişimi</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Klinik Depresyon ve Kaygı Yönetimi</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Süreci Başlatın</a>
+                    </div>
+                </div>
+
+                <!-- 02 Ergen Terapisi -->
+                <div class="service-detail-card reverse fade-up" id="ergen">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">02</span>
+                        <h2 class="service-detail-title">Ergen Terapisi</h2>
+                        <p class="service-detail-desc">
+                            Ergenlik, biyolojik ve psikolojik olarak yeniden yapılanmanın yaşandığı, hassas bir dönemdir. Bu süreçte gence eşlik ederken; kimlik gelişimi, sosyal uyum ve akademik baskı gibi konuları ele alıyor, aile dinamiklerini de gözeten destekleyici bir klinik süreç yürütüyoruz.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Sınav Kaygısı ve Gelecek Projeksiyonu</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Kimlik Karmaşası ve Sosyal Kaygı</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Dürtü Kontrolü ve Öfke Yönetimi</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Bilgi Alın</a>
+                    </div>
+                </div>
+
+                <!-- 03 Çift ve İlişki Terapisi -->
+                <div class="service-detail-card fade-up" id="cift">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-people-arrows"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">03</span>
+                        <h2 class="service-detail-title">Çift ve İlişki Terapisi</h2>
+                        <p class="service-detail-desc">
+                            İlişkiler, en derin yara ve en güçlü iyileşme potansiyelini bir arada barındırır. Gottman yöntemi ve bağlanma odaklı perspektifle; partnerler arasındaki iletişim döngülerini anlamlandırmak, güveni yeniden inşa etmek ve her iki tarafın da duyulduğu, anlaşıldığı sağlıklı bir bağ kurmak üzerine çalışıyoruz.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Sağlıklı İletişim Teknikleri ve Çatışma Çözümü</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Güven Tazeleme ve Bağlanma Sorunları</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>İlişkisel Travmalar ve Sadakat Süreçleri</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Randevu Alın</a>
+                    </div>
+                </div>
+
+                <!-- 04 Travma & EMDR -->
+                <div class="service-detail-card reverse fade-up" id="travma">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">04</span>
+                        <h2 class="service-detail-title">Travma & EMDR Terapisi</h2>
+                        <p class="service-detail-desc">
+                            EMDR (Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme), geçmişte yaşanan ve "donmuş" kalarak bugünkü işlevselliğimizi bozan travmatik anıların beyinde sağlıklı bir şekilde işlenmesini sağlayan güçlü bir yöntemdir. Bilimsel olarak kanıtlanmış bu teknikle, anıların üzerindeki yoğun duygusal yükü hafifletiyor ve iyileşme sürecini hızlandırıyoruz.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Kaza, Kayıp, Yas ve Akut Travmalar</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Çocukluk Çağı İhmal ve İstismarları</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Performans Kaygısı ve Negatif Kök İnançlar</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Detayları İnceleyin</a>
+                    </div>
+                </div>
+
+                <!-- 05 Anksiyete ve Kaygı Bozuklukları -->
+                <div class="service-detail-card fade-up" id="anksiyete">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">05</span>
+                        <h2 class="service-detail-title">Anksiyete ve Kaygı Yönetimi</h2>
+                        <p class="service-detail-desc">
+                            Anksiyete, aslında vücudun yanlış bir alarm sistemidir. Panik atak, sosyal fobi veya yaygın endişe durumlarında; kişinin bu alarm sistemini anlaması, beden duyumlarıyla barışması ve kaçınma davranışlarını sonlandırması üzerine klinik bir protokol uyguluyoruz.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Panik Bozukluk ve Agorafobi Uygulamaları</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Sosyal Kaygı ve Özgüven İnşası</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Obsesif Kompulsif Bozukluk (OKB) Alanı</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Süreci Başlatın</a>
+                    </div>
+                </div>
+
+                <!-- 06 Depresyon ve Duygu Durum -->
+                <div class="service-detail-card reverse fade-up" id="depresyon">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-cloud-rain"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">06</span>
+                        <h2 class="service-detail-title">Depresyon ve Duygu Durum</h2>
+                        <p class="service-detail-desc">
+                            Kendini boşlukta, enerjisiz ve umutsuz hissetme hallerinde; yaşamsal aktivasyonu artırmak, olumsuz otomatik düşüncelerle (BDT) baş etmek ve danışanın kendi değerlerine uygun bir hayat inşa etmesini sağlamak için çalışıyoruz. Melankoli ve yas süreçlerinde profesyonel klinik destek kritik önem taşır.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Sürdürülebilir Pozitif Yaşam Pratikleri</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Yetersizlik ve Suçluluk Duygularıyla Çalışma</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Duygu Odaklı Müdahale Teknikleri</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Randevu Alın</a>
+                    </div>
+                </div>
+
+                <!-- 07 Şema Terapi -->
+                <div class="service-detail-card fade-up" id="sema">
+                    <div class="service-detail-visual text-sage">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-detail-num">07</span>
+                        <h2 class="service-detail-title">Şema Terapi</h2>
+                        <p class="service-detail-desc">
+                            Şema Terapi, çocukluk ve ergenlik döneminde karşılanmayan temel duygusal ihtiyaçlarımız sonucu oluşan "erken dönem uyumsuz şemalarımızı" (Örn: Kusurluluk, Terk Edilme) değiştirmeye odaklanan bütüncül bir yaklaşımdır. Hayatınızda sürekli tekrar eden kısırdöngüleri kırmak için derinlemesine bir karakter analizi ve değişim süreci sunar.
+                        </p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Tekrarlayan İlişki Problemleri Çalışması</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Kök İnançların (Şemaların) Dönüştürülmesi</span>
+                            </div>
+                            <div class="service-feature">
+                                <div class="service-feature-check"><i class="fa-solid fa-check"></i></div>
+                                <span>Mod Çalışması ve Sağlıklı Yetişkin Modu İnşası</span>
+                            </div>
+                        </div>
+                        <a href="iletisim.html" class="btn-secondary mt-4">Bilgi Alın</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section bg-slate-50">
+            <div class="container faq-container">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold font-heading mb-4">Sıkça Sorulan Sorular</h2>
+                    <p class="text-muted">Terapi süreciyle ilgili en çok merak edilen konuları aşağıda bulabilirsiniz.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Terapi süreci ne kadar sürer?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Terapinin süresi; danışanın ihtiyacı, başvuru nedeni ve hedeflerine bağlı olarak değişkenlik gösterir. Bazı süreçler kısa süreli ve çözüm odaklı (8-12 seans) ilerlerken, Şema Terapi gibi derinlemesine karakter çalışmaları daha uzun soluklu bir zaman dilimini kapsayabilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Seanslar ne sıklıkta yapılır?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Klinik olarak en verimli süreç haftada bir yapılan görüşmelerle sağlanır. Ancak danışanın durumuna ve ihtiyacına göre iki haftada bir şeklinde düzenlemeler de yapılabilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            İlk seansta beni neler bekliyor?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>İlk seans, genellikle "tanışma ve değerlendirme" seansıdır. Bu aşamada sizi terapiye getiren ana nedenler hakkında konuşur, öz geçmişinizi değerlendirir ve çalışacağımız hedefleri birlikte belirleriz.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Online terapi mi, yüz yüze terapi mi daha etkilidir?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Araştırmalar, online terapinin birçok durumda yüz yüze terapi kadar etkili olduğunu göstermektedir. Önemli olan terapötik bağın (danışan-terapist ilişkisi) sağlıklı kurulmasıdır. Mesafe veya yoğun tempo nedeniyle online terapi tercih edilebilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Terapide gizlilik nasıl sağlanır?
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Gizlilik, terapinin en temel etik ilkesidir. Seanslarda konuşulan her şey, etik ve yasal sınırlar dahilinde psikolog ve danışan arasında kalır. Bu güven ortamı, iyileşmenin kurucu unsurlarından biridir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-sage text-white text-center">
+            <div class="container max-w-2xl">
+                <h2 class="text-3xl font-bold font-heading mb-6">Hangi terapinin sizin için uygun olduğuna karar veremediniz mi?</h2>
+                <p class="text-sage-100 text-lg mb-8">Ön görüşme talep ederek, ihtiyaçlarınızı birlikte değerlendirebilir ve size en uygun terapi planını oluşturabiliriz.</p>
+                <a href="iletisim.html" class="inline-block bg-white text-sage-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition duration-300">İletişime Geçin</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="footer-logo-name">Kln. Psk. Asiye Usluca</span>
+                    </a>
+                    <p class="footer-desc">
+                        Ruhsal iyi oluşunuza önem veriyor, bilimsel dayanaklı terapi ekolleriyle destek sunuyorum. Online ve yüz yüze terapi ile her zaman yanınızdayım.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/kl.psk.asiyeusluca/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:info@asiyeusluca.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-nav-title">Hızlı Menü</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimda.html">Hakkımda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="yazilar.html">Yazılar</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-nav-title">Çalışma Alanları</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="hizmetler.html#bireysel">Bireysel Terapi</a></li>
+                        <li><a href="hizmetler.html#ergen">Ergen Terapisi</a></li>
+                        <li><a href="hizmetler.html#cift">Çift Terapisi</a></li>
+                        <li><a href="hizmetler.html#online">Online Terapi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Klinik Psikolog Asiye Usluca. Tüm hakları saklıdır.</p>
+                <div class="flex gap-4">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">KVKK Aydınlatma Metni</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar Scrolled State
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Scroll Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="https://wa.me/905454201468" target="_blank" class="float-btn float-whatsapp" aria-label="WhatsApp üzerinden ulaşın">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+905454201468" class="float-btn float-phone" aria-label="Telefonla arayın">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+</body>
+</html>
