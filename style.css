@@ -958,6 +958,49 @@ h1, h2, h3, h4, h5 {
   background: var(--sage);
 }
 
+/* New About Enrichment Styles */
+.about-signature-quote {
+    margin-top: 40px;
+    padding: 30px;
+    background: var(--bg-premium);
+    border-left: 4px solid var(--secondary);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    position: relative;
+    font-style: italic;
+    box-shadow: var(--shadow-premium);
+}
+
+.about-signature-quote::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 60px;
+    color: var(--secondary);
+    opacity: 0.2;
+    font-family: serif;
+}
+
+.about-signature-text {
+    font-size: 18px;
+    color: var(--primary);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-signature-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary);
+    display: block;
+}
+
+.about-signature-title {
+    font-size: 13px;
+    color: var(--muted);
+}
+
 /* ===== SERVICES PAGE ===== */
 .services-detail {
   padding: 80px 24px;
@@ -1897,38 +1940,67 @@ h1, h2, h3, h4, h5 {
 .academic-card {
     background: white;
     border-radius: var(--radius);
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    border: 1px solid rgba(0,0,0,0.05);
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    border: 1px solid rgba(136,164,124,0.1);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.academic-card::after {
+    content: '\f19d'; /* graduation cap icon from font awesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    font-size: 80px;
+    color: var(--sage-50);
+    opacity: 0.5;
+    transform: rotate(-15deg);
     transition: var(--transition);
 }
 
 .academic-card:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+    border-color: var(--sage-200);
+}
+
+.academic-card:hover::after {
+    transform: rotate(0deg) scale(1.1);
+    color: var(--sage-100);
 }
 
 .academic-badge {
     display: inline-block;
-    padding: 4px 12px;
-    background: #EDF2F7;
-    color: #4A5568;
+    padding: 6px 14px;
+    background: var(--sage-50);
+    color: var(--sage-dark);
     border-radius: 50px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    width: fit-content;
+    border: 1px solid var(--sage-100);
 }
 
 .academic-uni {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    color: #1A202C;
-    margin-bottom: 4px;
+    color: var(--primary);
+    margin-bottom: 6px;
 }
 
 .academic-program {
     font-size: 15px;
-    color: #718096;
+    color: var(--muted);
+    font-weight: 500;
 }
 
 /* ===== PROFESSIONAL TRAINING ===== */
