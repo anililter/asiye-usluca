@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5 {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--slate-text);
+  background: var(--primary); /* Use primary dark color for visibility */
   border-radius: 2px;
   transition: var(--transition);
 }
