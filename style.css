@@ -1069,19 +1069,26 @@ h1, h2, h3, h4, h5 {
 }
 
 .service-detail-visual {
-  background: linear-gradient(135deg, var(--sage-50), #EEF4EC);
+  background: white;
   border-radius: var(--radius-lg);
-  padding: 56px;
-  text-align: center;
-  font-size: 72px;
-  aspect-ratio: 4/3;
+  overflow: hidden;
+  aspect-ratio: 4/4;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 16px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   border: 1px solid rgba(136,164,124,0.1);
+}
+
+.service-detail-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.service-detail-card:hover .service-detail-visual img {
+  transform: scale(1.05);
 }
 
 .service-detail-num {
