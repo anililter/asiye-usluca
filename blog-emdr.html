@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMDR: Geçmişin Yükünden Özgürleşmek | Kln. Psk. Asiye Usluca</title>
+    <meta name="description" content="EMDR terapisi nedir ve travmatik anılar üzerinde nasıl çalışır? Göz hareketleriyle duyarsızlaştırma ve yeniden işleme süreci.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { sage: { DEFAULT: '#1A3C34', 50: '#FAF9F6', 100: '#E5DED4', 200: '#D9B99B', 400: '#1A3C34' } } } } }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">Kln. Psk. Asiye Usluca</span>
+                    <span class="nav-logo-title">Klinik Psikolog</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="yazilar.html" class="active">Yazılar</a></li>
+                <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span style="background:var(--primary)"></span><span style="background:var(--primary)"></span><span style="background:var(--primary)"></span></button>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <header class="blog-post-header">
+            <div class="blog-post-meta">
+                <span><i class="fa-regular fa-calendar"></i> 25 Mart 2024</span>
+                <span><i class="fa-solid fa-folder-open"></i> Travma & EMDR</span>
+                <span><i class="fa-regular fa-clock"></i> 7 dk okuma</span>
+            </div>
+            <h1 class="blog-post-title">EMDR: Geçmişin Yükünden Özgürleşmek</h1>
+        </header>
+
+        <div class="blog-post-hero-image">
+            <img src="emdr_trauma_healing_1777037487297.png" alt="EMDR Travma Terapisi">
+        </div>
+
+        <div class="blog-post-container">
+            <div class="blog-post-content">
+                <p>Geçmişte yaşadığınız zor bir olay, sanki dün yaşanmış gibi bugününüzü etkilemeye devam mı ediyor? Bazı anılar vardır ki zihnimizde hiç eskimez, her hatırlandığında aynı acıyı veya korkuyu hissettirir. İşte <strong>EMDR</strong> (Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme), tam da bu "donmuş" anıları çözmek için geliştirilmiş bilimsel bir yöntemdir.</p>
+                
+                <p>EMDR, beynin doğal iyileşme mekanizmasını kullanarak, travmatik anıların üzerindeki yoğun duygusal yükü hafifletmemizi ve bu anıları artık bizi rahatsız etmeyen birer bilgiye dönüştürmemizi sağlar.</p>
+
+                <h2>Beyin Travmayı Nasıl İşler?</h2>
+                <p>Normal bir anı, yaşanır ve beynin arşivine kaldırılır. Ancak travmatik bir olay sırasında beyindeki bilgi işleme sistemi sekteye uğrayabilir. Olay; o anki görselleri, sesleri ve en önemlisi o anki yoğun duygularıyla birlikte beyinde "hapsolur". Bugün yaşadığınız bir tetikleyici, sizi sanki o anın içindeymişsiniz gibi hissettirebilir.</p>
+
+                <blockquote>
+                    "EMDR, yaranın içindeki iltihabı temizlemek gibidir. Acı veren olay hala oradadır ama artık canınızı yakmaz."
+                </blockquote>
+
+                <h3>EMDR Nasıl Uygulanır?</h3>
+                <p>Danışan, travmatik anının bir parçasına odaklanırken, terapist danışanın gözlerini sağa ve sola hareket ettirmesini sağlar (çift yönlü uyarım). Bu süreç, uykudaki REM (hızlı göz hareketi) evresine benzer bir işlev görür ve beynin o anıyı yeniden işleyerek "sağlıklı bir dosyaya" yerleştirmesine yardımcı olur.</p>
+
+                <h2>EMDR Sadece "Büyük" Travmalar İçin mi?</h2>
+                <p>Hayır. Sadece kaza veya doğal afetler değil; çocuklukta maruz kalınan eleştiriler, bir sunum sırasında yaşanan rezil olma hissi veya aldatılma gibi "küçük t" dediğimiz yaşantılar da EMDR ile çalışılabilir. Eğer geçmişiniz bugününüzü yönetiyorsa, EMDR bu mirası değiştirmek için en etkili yollardan biridir.</p>
+
+                <p>Geçmişi değiştiremeyiz ama geçmişin bugünkü etkisini değiştirmek bizim elimizdedir.</p>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Klinik Psikolog Asiye Usluca. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
